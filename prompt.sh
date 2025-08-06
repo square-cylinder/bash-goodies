@@ -17,10 +17,11 @@ GIT_PS1_SHOWCOLORHINTS=1
 #RESET='\[\033[00m\]'
 
 __get_command_status() {
-	if [ $? -eq 0 ]; then
+	res=$?
+	if [ $res -eq 0 ]; then
 		echo -e "\e[32m☺ \e[0m"
 	else
-		echo -e "\e[31m☹ \e[0m"
+		echo -e "\e[31m☹ 🖛  $res\e[0m"
 	fi
 }
 
