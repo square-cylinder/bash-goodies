@@ -5,6 +5,5 @@
 DIR=$(dirname ${BASH_SOURCE[0]})
 
 . "$DIR/bashmarks.sh"
-
-alias e="$EDITOR"
+. "$DIR/aliases.sh"
 
