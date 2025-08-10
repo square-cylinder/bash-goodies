@@ -19,9 +19,9 @@ GIT_PS1_SHOWCOLORHINTS=1
 __get_command_status() {
 	res=$?
 	if [ $res -eq 0 ]; then
-		echo -e "\e[32m☺ \e[0m"
+		echo -e "\001\e[32m\002☺ \001\e[0m\002"
 	else
-		echo -e "\e[31m☹ 🖛  $res\e[0m"
+		echo -e "\001\e[31m\002☹ 🖛  $res\001\e[0m\002"
 	fi
 }
 
