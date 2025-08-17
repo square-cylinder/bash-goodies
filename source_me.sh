@@ -1,6 +1,6 @@
 # Source this file to activate everything
 
-[ -z "$EDITOR" ] && EDITOR=vim
+[ -z "$EDITOR" ] && export EDITOR=vim
 
 DIR=$(dirname ${BASH_SOURCE[0]})
 
